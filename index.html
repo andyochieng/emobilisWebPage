@@ -2,176 +2,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--  meta data of the page : more: title -->
     <meta charset="UTF-8">
-    <title>Emobilis</title>
-<!--    link to the file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheeet"/>
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet"/>
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
-<!--    internal css -->
-    <style>
-    /*  css code   */
-    button {
-        background-color: green;
-        color: white;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-    }
-    /* to syle using an id , place # infront of the id name*/
-    #btnSubmit {
-        background-color: blue;
-        color: white;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-    }
-
-    /* to style using a class , place . infront of the class name */
-    .table {
-        width: 100%;
-        margin: 20px;
-        padding: 10px;
-        font-family: Cambria;
-    }
-
-    td {
-        padding: 12px;
-        text-align: center;
-        border: 1px solid grey;
-    }
-
-
-    </style>
-
 
 </head>
-<body style="background-color: black; color: white; ">
-<!-- ctrl + / -->
-<!--inside i can write a comment -->
-<!--   what your user can see :: inline / block element-->
-<!--examples of block level elements -->
-<!--common text based elements -->
-<p style="font-family: 'Calibri Light'; font-weight: bold; color: purple;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-    Lorem Ipsum passages,
-    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<!--lists-->
-<!--ordered elements -->
-<ol>
-    <li>AFC Leopards</li>
-    <li>GOR Mahia</li>
-    <li>Sofapaka</li>
-    <li>Tusker FC</li>
-</ol>
-<!--unordered elements-->
-<ul>
-    <li>AFC Leopards</li>
-    <li>GOR Mahia</li>
-    <li>Sofapaka</li>
-    <li>Tusker FC</li>
-</ul>
-<!--headers -->
-<h1>Heading 1</h1>
-<h6>Heading 2</h6>
-<!--blockquotes-->
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-    industry's
-    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-    Lorem Ipsum passages,
-</blockquote>
 
-<!--examples of inline elements -->
-<!-- buttons -->
-<button>Click ME</button>
-<button id="btnSubmit">Submit Button</button>
-<!--image-->
-<img src="assets/myimage.jpeg" width="200" height="200" alt="Some image here"/>
-<!--table-->
-<table class="table">
-    <thead>
-    <th>Position</th>
-    <th>Team Name</th>
-    <th>Points</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>1</td>
-        <td>AFC Leopards</td>
-        <td>30</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Sofapaka</td>
-        <td>29</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Gor Mahia</td>
-        <td>28</td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-        <td colspan="2">Total Ticket pricing</td>
-        <td>$5.50</td>
-    </tr>
-    </tfoot>
-</table>
-
-<table>
-    <thead>
-    <th>Position</th>
-    <th>Team Name</th>
-    <th>Points</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td>1</td>
-        <td>AFC Leopards</td>
-        <td>30</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Sofapaka</td>
-        <td>29</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Gor Mahia</td>
-        <td>28</td>
-    </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-        <td colspan="2">Total Ticket pricing</td>
-        <td>$5.50</td>
-    </tr>
-    </tfoot>
-</table>
-<!--form -->
-<form method="POST">
-    <label>Team Name</label>
-    <input type="text" placeholder="Enter Team Name" name="team_name"/>
-    <label>Season Points</label>
-    <input type="number" placeholder="Enter Points" name="team_points"/>
-    <label>Team Email</label>
-    <input type="email" placeholder="Enter Team Email" name="team_email"/>
-    <label>Team Picture</label>
-    <input type="file"  name="team_pic"/>
-    <label>Home team Color</label>
-    <select name="team_color">
-        <option value="red">Red</option>
-        <option value="green">Green</option>
-        <option value="purple">Purple</option>
+<body>
+<div class="container-fluid">
+    <div class="grid-container">
+        <div id="navbarDiv">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="assets/andy.jpeg" alt="logo" width="40" height="40"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="public/team.html">Meet the Team</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Courses
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Python</a></li>
+            <li><a class="dropdown-item" href="#">Javascript</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">6 months course</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+        </div>
+        <div id="courseDiv">
+            <div class="d-flex flex-column p-3">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item"> Main courses</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/team.html">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/team.html">Javascript</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="videoDiv">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/paMzsQW_9xA?si=O4k8A6oDxWTZ-XZ-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="imageDiv" class="img-container">
+                <img src="https://www.emobilis.ac.ke/images/logos-new/ajira-logo.png" class="img-thumbnail" alt="logo"/>
+        </div>
+        <div id="sCourseDiv">
+             <div class="d-flex flex-column p-3">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item"> Short courses</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/team.html">Cyber security</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/team.html">Android</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="applicationForm">
+            <h5 style="text-align: center">Application form</h5>
+            <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="course" class="form-label">Select course of Intrest</label>
+    <select>
+        <option value="">Javascript</option>A
+        <option value="">Python</option>
+        <option value="">Cyber security</option>
+        <option value=""x>Android</option>
     </select>
-    <input type="submit" value="Submit Team"/>
-    <input type="reset" value="Reset Form">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+        </div>
+        <div id="someDiv">
+             <div class="d-flex flex-column p-3">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">Campus location</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/team.html">Westlands, Kenya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/team.html">Kiproo Center, ABC Avenue</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footDiv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About us</h5>
+                        <p>hie ears are open to the cry</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact us</h5>
+                        <p>Email: info@emobilis.ac.ke</p>
+                        <p>Phone: 0793479324</p>
+                        <p>Adress: Westlands, Nairobi Kenya</p>
 
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Follow us on</h5>
+                        <p><a href="https://www.instagram.com/andyb629/">Emobilis</a></p>
+                        <p><a href="https://www.facebook.com/andie.ochieng/">Emobilis</a></p>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
